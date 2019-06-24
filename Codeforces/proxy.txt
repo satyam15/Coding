@@ -1,0 +1,15 @@
+Acquire::http::proxy "http://edcguest:edcguest@172.31.102.29:3128/";
+Acquire::https::proxy "https://edcguest:edcguest@172.31.102.29:3128/";
+
+
+
+
+
+
+
+
+
+
+http_proxy="http://edcguest:edcguest@172.31.102.29:3128/:"
+https_proxy="https://edcguest:edcguest@172.31.102.29:3128/:"
+ftp_proxy="ftp://edcguest:edcguest@172.31.102.29:3128/:"

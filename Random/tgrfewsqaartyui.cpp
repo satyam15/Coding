@@ -1,0 +1,81 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(void)
+{
+int t;
+cin>>t;
+while(t--)
+{
+long long int x,y,z,a,b;
+cin>>x>>y;
+if(x==0||y==0)
+{
+	cout<<x+y<<endl;
+}
+else
+{
+while(x!=y)
+{
+	z=x<y?x:y;
+	if(z==x)
+	{
+		
+		a=y-x;
+		if(a<x)
+		{
+			y-=z;
+		}
+		else
+		{
+		b=a/x;
+		if(a%x==0)
+		{
+			if(b!=1)
+			{
+			b--;
+			y-=z*b;
+			}
+			else
+			{
+				y-=z;
+			}
+		}
+		else
+		{
+			y-=z*b;
+		}
+	
+		}
+	}
+	else
+	{
+		a=x-y;
+		if(a<y)
+		{
+			x-=z;
+		}
+		else
+		{
+		b=a/y;
+		if(a%y==0)
+		{
+			if(b!=1)
+			{
+				b--;
+				x-=z*b;
+			}
+			else
+			{
+				x-=z;
+			}
+		}
+		else
+		x-=z*b;
+		}
+	}
+	}
+	cout<<x+y<<endl;	
+}	
+}
+return 0;
+}
