@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ld double
+//#define ld double
 #define ll long long
 #define pb push_back
 #define mk make_pair
